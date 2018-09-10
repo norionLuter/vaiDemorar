@@ -12,9 +12,34 @@
 			<a href="#">Sobre</a>
 			<a href="#">Contato</a>
 			<a href="#">Cadastro</a>
-			<a href="#">Login</a>
+			<a href="#" onClick="login()">Login</a>
 		</nav>
 	</header>
+
+	<div id="cadastro">
+		<h4>Cadastro</h4>
+		<form action="">
+			<input type="text" placeholder="Nome da empresa">
+			<input type="text" placeholder="Cnpj">
+			<input type="text" placeholder="Estado">
+			<input type="text" placeholder="Bairro">
+			<input type="text" placeholder="Endereço">
+			<input type="text" placeholder="Email">
+			<input type="text" placeholder="Senha">
+			<button>Enviar</button>
+		</form>
+	</div>
+	<div id="login">
+		<h4>USUÁRIO</h4>
+		<form action="">
+			<input type="text" placeholder="email">
+			<input type="password" placeholder="senha">
+			<button>Enviar</button>
+			<span>Recuperar senha</span>
+		</form>
+
+	</div>
+
 	<main>
 		<div id="slider" >
 			<img src="http://anilbasnet.com/demo/biz-lina/images/slider/slide-4.jpg" height="100%" width="100%" alt="">
@@ -28,8 +53,11 @@
 				<img src="http://anilbasnet.com/demo/biz-lina/images/featured-page/about-img.png" alt="" height="80%" width="100%">
 			</div>
 			<div class="coluna-4 pl-12">
-					<h4>Who we are ?</h4>
-					<p>Don’t take my word for it. Read the first few pages and see how this will change your life</p>
+					<h4 class="mt-3">Quem nós somos?</h4>
+					<p>
+						 Nós somos uma empresa de desenvolvimento de sistemas de espera online.
+						 Uma solução barata e otimizada para sua empresa.
+					 </p>
 					<p class="cor-cinza">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac lorem pretium, laoreet enim at, malesuada elit.</p>
 					<ul  class="p-0 float-left list-checked">
 					    <li><img src="/imagens/icons/checked.svg" width="100%"></li>
@@ -45,7 +73,98 @@
 					</ul>
 			</div>
 		</div>
+
+		<div id="bloco2" class="mt-5">
+				<h4>Aumento de produtividade</h4>
+		</div>
+
+
+		<div id="bloco3" class="mt-5">
+			<h4>Our Key Features</h4>
+			<span></span>
+			<span></span>
+			<p class="cor-cinza">Nullam vulputate lorem ut leo. Sed volutpat.
+				 Etiam non pede. Nullam et mauris. Praesent sed elit.
+				  Nulla posuere. Etiam sit amet turpis. Nullam mattis libero non
+			</p>
+		</div>
+
+		<div id="bloco4" class="mb-5">
+			<div class="coluna-3">
+				<h4>Basico</h4>
+				<span>
+						<sup>R$</sup>
+						100
+						<sub>/mensal</sub>
+				</span>
+				<ul>
+					<li>1 filial</li>
+					<li>1 fila por filial</li>
+					<li>1 atendente por fila</li>
+					<li>Sem relatórios</li>
+					<li>Sem feedback dos clientes</li>
+				</ul>
+			</div>
+			
+			<div class="coluna-3">
+				<h4 class="Premium">Premium</h4>
+				<span>
+						<sup>R$</sup>
+						250
+						<sub>/mensal</sub>
+				</span>
+				<ul>
+					<li>Ilimitadas filiais</li>
+					<li>Ilimitadas filas por filial</li>
+					<li>Ilimitadas atendentes por filas</li>
+					<li>Relatórios de atendimento</li>
+					<li>Feedback dos clientes</li>
+					<li>Responder clientes</li>
+				</ul>
+			</div>
+
+			<div class="coluna-3">
+				<h4>recomendado</h4>
+				<span>
+						<sup>R$</sup>
+						150
+						<sub>/mensal</sub>
+				</span>
+				<ul>
+					<li>10 filiais</li>
+					<li>5 filas por filial</li>
+					<li>15 atendentes por filas</li>
+					<li>Relatórios de atendimento</li>
+					<li>Feedback dos clientes</li>
+				</ul>
+			</div>
+		
+		</div>
+
 	</main>
-	<footer></footer>
+	<footer>
+		<div class="coluna-3">
+	     <form>
+	         <h4>Contato</h4>
+	         <input type="text" placeholder="Email"   name="email">
+	         <input type="text" placeholder="Assunto" name="assunto">
+	         <textarea placeholder="Mensagem" name="mensagem"></textarea>
+	       <button>enviar</button>
+	     </form>
+     	</div>
+     	<div class="coluna-3"></div>
+     	<div class="coluna-3"></div>
+	</footer>
+
+<script type="text/javascript">
+		function login(){
+			if(document.getElementById("login").style.display==="block"){
+				document.getElementById("login").style.display="none";
+			}
+			else{
+				document.getElementById("login").style.display="block";
+			}
+		}
+</script>
 </body>
 </html>
